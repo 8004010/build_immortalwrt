@@ -42,9 +42,9 @@ function git_sparse_clone() {
 # 添加应用过滤
 # git clone  https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 #加入turboacc
-#curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh
-#chmod -R 777 add_turboacc.sh
-#bash add_turboacc.sh --no-sfe
+curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh
+chmod -R 777 add_turboacc.sh
+bash add_turboacc.sh --no-sfe
 
 
 echo "
@@ -66,7 +66,7 @@ CONFIG_PACKAGE_luci-theme-argon=y
 #CONFIG_PACKAGE_luci-app-pushbot=y
 
 # TurboAcc
-#CONFIG_PACKAGE_luci-app-turboacc=y
+CONFIG_PACKAGE_luci-app-turboacc=y
 
 " >> .config
 
